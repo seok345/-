@@ -20,12 +20,12 @@ ReadMate 프로젝트의 확장 기능으로, HuggingFace의 EleutherAI/polyglot
 
 ## 챗봇 핵심 코드 설명
 
-# 모델 및 토크나이저 로드
+### 모델 및 토크나이저 로드
 model_name = "EleutherAI/polyglot-ko-1.3b"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
-# 디바이스 설정 (GPU 우선 사용)
+### 디바이스 설정 (GPU 우선 사용)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
