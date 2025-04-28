@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI채팅 서비스</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>질문 </h1>
+    </div>
+
+    <div id="chatContainer">
+        <div id="chatBox"></div>
+        <div id="error" class="hidden"></div>
+        <div id="loading" class="hidden text-center">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div id="inputArea">
+        <input type="text" id="userInput" placeholder="궁금한 점을 입력하세요!" />
+        <button onclick="sendMessage()" id="sendBtn">보내기</button>
+    </div>
+
+    <div id="responseTime"></div>
+
+    <script src="test.js"></script>
+</body>
+</html>
+
